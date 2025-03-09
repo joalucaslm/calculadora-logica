@@ -26,24 +26,24 @@ export default function Calculadora() {
                     <th><Butao value="F" /></th>
                     <th><Butao value="G" /></th>
                     <th><Butao value="H" /></th>
-                    <th><Butao value="A" /></th>
-                    <th><Butao value="A" /></th>
+                    <th><Butao value="(" /></th>
+                    <th><Butao value=")" /></th>
                 </tr>
                 <tr>
                     <th><Butao value="I" /></th>
                     <th><Butao value="J" /></th>
                     <th><Butao value="K" /></th>
                     <th><Butao value="L" /></th>
-                    <th><Butao value="A" /></th>
-                    <th><Butao value="A" /></th>
+                    <th><Butao value="→" /></th>
+                    <th><Butao value="∧" /></th>
                 </tr>
                 <tr>
                     <th><Butao value="M" /></th>
                     <th><Butao value="N" /></th>
                     <th><Butao value="O" /></th>
                     <th><Butao value="P" /></th>
-                    <th><Butao value="A" /></th>
-                    <th><Butao value="A" /></th>
+                    <th><Butao value="↔" /></th>
+                    <th><Butao value="∨" /></th>
                 </tr>
                 <tr>
                     <th><Butao value="Q" /></th>
