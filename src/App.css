@@ -1,0 +1,14 @@
+:root {
+    /*Cor*/
+    --preto: #000;
+    --branco: #fafafa;
+    --laranja: #F77F00;
+    --laranja-escuro: #ff9728;
+    --azul: #1f69b1;
+    --cinza: #f0f0f0;
+    --cinza-secundario: #c4c4c4;
+    --preto-secundario: #4f4f4f;
+  
+    /*Configs*/
+    --border-radius: 2px;
+  }

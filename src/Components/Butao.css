@@ -1,0 +1,6 @@
+.butao h2{
+    border: 1px solid var(--cinza);
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--azul);
+}
