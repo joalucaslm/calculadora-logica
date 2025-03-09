@@ -1,10 +1,10 @@
 import React from "react";
 import "./Butao.css";
 
-export default function Butao() {
+export default function Butao({ value, color }) {
   return (
-    <div className="butao">
-      <h2>A</h2>
+    <div className="butao" style={{ backgroundColor: color }}>
+      <button>{value}</button>
     </div>
   );
 }

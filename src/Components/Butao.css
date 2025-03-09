@@ -1,6 +1,25 @@
-.butao h2{
-    border: 1px solid var(--cinza);
-    height: 2rem;
-    width: 2rem;
-    background-color: var(--azul);
+.butao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cinza-secundario);
+  border-bottom: 3px solid var(--preto-secundario);
+  border-radius: 0.2rem;
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.butao:hover {
+  background-color: var(--cinza-escuro);
+}
+
+.butao button {
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--preto);
+  transition: color 0.3s;
 }
