@@ -44,7 +44,7 @@ button#equal {
 form {
 	/* width: 294px; */
     width: 100%;
-	border-radius: .05rem;
+	border-radius: .25rem;
 }
 
 form input {
@@ -56,7 +56,7 @@ form input {
 }
 
 td, th {
-	color: transparent;
+    text-align: center;
 }
 
 #answer-table {
@@ -66,9 +66,7 @@ td, th {
 
 #table-test {
 	text-align: center;
-	position: relative;
-	bottom: 15rem;
-	left: 20rem;
+	margin-top: 2em;
 }
 
 #content {

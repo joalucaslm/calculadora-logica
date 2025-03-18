@@ -39,19 +39,29 @@
     <!-- Default Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/light.css" />
+    <link rel="stylesheet" href="css/dark.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
   </head>
 
   <body id="body">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <label  id="darkSwitch" ></label>
-        <label for="darkSwitch" id="labelDarkSwitch"></label>
+        <div class="form-check form-switch">
+          <input class="form-check-input" id="darkSwitch" />
+          <label for="darkSwitch" id="labelDarkSwitch"></label>
+        </div>
       </div>
     </nav>
 
+    <!-- Calculadora -->
     <div
       class="container d-flex justify-content-center"
-      style="margin-top: 6em"
+      style="margin-top: 2em"
     >
       <div class="calculator">
         <form>
@@ -291,6 +301,7 @@
       </div>
     </div>
 
+    <!-- Espaço para exibição do resultado -->
     <div class="container">
       <div>
         <h5 id="table-test"></h5>
@@ -298,6 +309,7 @@
       <div id="result"></div>
     </div>
 
+    <!-- Funções -->
     <script src="./js/main.js" type="text/javascript"></script>
     <script>
       const tooltipTriggerList = document.querySelectorAll(

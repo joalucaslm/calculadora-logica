@@ -399,6 +399,13 @@ function build_answer_truth_table(obj, qtde_linhas) {
   clear_result(); //Limpa os resultados anteriores
 
   let table = document.createElement("table"); // Cria uma nova tabela que exibirá os resultados
+  table.classList.add("table");
+  table.classList.add("table-striped");
+  if (darkMode) {
+    table.classList.add("table-dark");
+  } else {
+    table.classList.add("table-light");
+  }
 
   table.id = "answer-table";
   table.style = "margin-top: 2em;";
@@ -409,6 +416,8 @@ function build_answer_truth_table(obj, qtde_linhas) {
     //Título da tabela
     let row = thead.insertRow(); // Cria a linha do cabeçalho do título
     let th = document.createElement("th");
+    th.innerHTML = "Tabela-Verdade";
+    th.colSpan = Object.keys(obj).length;
     row.appendChild(th);
   }
 
@@ -421,6 +430,21 @@ function build_answer_truth_table(obj, qtde_linhas) {
     row.appendChild(th);
   }
 
+  table.appendChild(thead);
+
+  let tbody = table.createTBody(); // Cria o corpo da tabela-verdade
+  tbody.classList.add("table-group-divider");
+
+  for (let i = 0; i < qtde_linhas; i++) {
+    let row = tbody.insertRow();
+    for (let header in obj) {
+      let td = document.createElement("td");
+      td.innerHTML = obj[header][i];
+      row.appendChild(td);
+    }
+  }
+
+  table.appendChild(tbody);
 
   document.querySelector("#result").appendChild(table);
 }
