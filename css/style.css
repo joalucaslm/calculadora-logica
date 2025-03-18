@@ -1,24 +1,13 @@
-/* --------------------------------- Layout ---------------------------------*/
-
 .calculator {
-	width: 380px;
+	width: 300px;
 	padding: 12px;
 }
-
-/* vertically center .container */
-/* body {
-  min-height: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-} */
 
 button {
 	width: 16%;
 	height: 100%;
-	font-family: 'Roboto', sans-serif;
 	border: none;
-	border-radius: 5px;
+	border-radius: 2px;
 	outline: none !important;
 	position:relative;
 	transition: all 0.1s;
@@ -42,11 +31,9 @@ button#equal {
 }
 
 #display1 {
-	font-family: 'Roboto', sans-serif;
 	font-weight: 400 !important;
 	font-size: 20px !important;
-	/* height: 50px; */
-    height: 5em;
+    height: 2em;
 }
 
 .button-row {
@@ -76,8 +63,8 @@ td, th {
 	font-family: 'Roboto', sans-serif;
 }
 
+
 #table-test {
-	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	margin-top: 2em;
 }
