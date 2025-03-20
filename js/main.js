@@ -400,6 +400,7 @@ function build_answer_truth_table(obj, qtde_linhas) {
 
   let table = document.createElement("table"); // Cria uma nova tabela que exibirá os resultados
 
+  
   table.id = "answer-table";
   table.style = "margin-top: 2em;";
 
@@ -420,7 +421,6 @@ function build_answer_truth_table(obj, qtde_linhas) {
     th.innerHTML = header;
     row.appendChild(th);
   }
-
 
   document.querySelector("#result").appendChild(table);
 }
