@@ -237,7 +237,7 @@ function structure_answer() {
   expression = correct_expression(expression);
   let variaveis = sort_variables(expression);
   let qtde_linhas_tabela = 2 ** variaveis.length;
-  let bin = "0".repeat(variaveis.length); // Cria uma string de com o valor 0 em binário
+  let bin = "0".repeat(variaveis.length); 
   let array_answer_table = {};
 
   for (let i = 0; i < qtde_linhas_tabela; i++) {
@@ -400,10 +400,8 @@ function build_answer_truth_table(obj, qtde_linhas) {
 
   let table = document.createElement("table"); // Cria uma nova tabela que exibirá os resultados
 
-  table.id = "answer-table";
-  table.style = "margin-top: 2em;";
 
-  let thead = table.createTHead(); // Cria o cabeçalho da tabela
+  let thead = table.createTHead();
 
   {
     //Título da tabela
@@ -411,8 +409,6 @@ function build_answer_truth_table(obj, qtde_linhas) {
     let th = document.createElement("th");
     row.appendChild(th);
   }
-
-  let row = thead.insertRow(); // Cria a linha do cabeçalho com as variáveis
 
   for (let header in obj) {
     // Preenche o cabeçalho
